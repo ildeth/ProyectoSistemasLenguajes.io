@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- meta que garantiza el zoom adecuado para pantallas de dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fuente de Alimentación</title>
+    <!-- hoja de estilos aparte, enlazada -->
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+    <link href="imagenes/favicon.ico" rel="shorcut icon">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- archivo de javascripts aparte, enlazado-->
+    <script src="funciones-daw.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="imagenes/alimentacion.jpg">
+            <p class="titular">FUENTE DE ALIMENTACIÓN</p>
+            <!-- Iconos de menú hamburguesa y de cierre. Inicialmente ocultos. 
+                Contienen los eventos para mostrar/ocultar la barra de navegación-->
+            <i class="fas fa-bars" onclick="mostrar('barranav','hambu','aspa')" id="hambu"></i>
+            <i class="fas fa-window-close" onclick="ocultar('barranav','hambu','aspa')" id="aspa"></i>
+        </header>
+        <nav id="barranav">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="tipos.html">TIPOS</a></li>
+                <li><a href="partes.html">PARTES</a></li>
+                <li><a href="certificación.html">CERTIFICACIÓN</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h1 class="titulo">Tipos de fuentes de alimentación: Estandar y Modular</h1>
+            <p class="contenido">Dentro de las fuentes de alimentación podemos diferenciar 2 tipos: Las fuentes normales y las modulares.</p>
+            <img class="foto1" src="imagenes/TIPOFUENTE1.jpg">
+            <p class="contenido"><b>Las modulares</b>: Se caracterizan por que los cables que alimentan el pc se pueden conectar según nuestras necesidades, es decir, si por ejemplo solo tenemos que alimentar una placa base y un disco duro, pondremos solo dos cables. Si metemos
+                más componentes podemos seguir metiendo más cables. Lo bueno de esto es que primeramente al tener menos cables mejoramos la ventilación de la caja y nos quedan los cables más organizados.</p>
+            <h1 class="titulo">Las fuentes SFX</h1>
+            <img src="imagenes/TIPOFUENTE2.jpg" alt="">
+            <p class="contenido">Las fuentes SFX son similares a las fuentes standard, con la diferencia de que suelen ser más pequeñas, son fuentes que se adaptadan según el tipo de equipo en el que las quieras y con unas dimensiones muy concretas. El tamaño standard de
+                estas fuentes SFX suelen ser por norma general 125 x 100 x 63 mm. La potencia que son capaces de ofrecernos estás fuentes SFX es algo inferior a las fuentes normales debido a las limitaciones que le impone el tamaño al rendimiento de la
+                misma.
+            </p>
+            <h1 class="titulo">Fuentes de alimentación externas</h1>
+            <p class="contenido">Estas fuentes son las que encontramos en los cargadores de los portátiles y mini pcs. Por norma general estas fuentes suelen ser un bloque de plástico con 2 cables para enchufarlo. Uno que va a la red eléctrica al transformador (fuente) y
+                otro de la fuente al puerto de carga/alimentación.</p>
+            <img src="imagenes/TIPOFUENTE3.jpg" alt="">
+            <p class="contenido">Estas fuentes carecen de ventilación, anteriormente coméntanos en este mismo post que <b>la ventilación de las fuentes es necesaria</b>. Pero en el caso de las fuentes externas no es necesario ya que normalmente consumen mucha menos corriente
+                que las fuentes de alimentación normales.</p>
+            <p></p>
+            <p class="contenido">Una fuente de alimentación externa consume aproximadamente lo necesario para dar 19v y un amperage bajo.</p>
+            <p></p>
+            <p class="contenido">Para mantener una buena refrigeración pon la fuente de alimentación externa encima de la mesa o en algún sitio sin estar tapada.</p>
+            <p></p>
+            <p class="contenido">En el caso de los mini PCS pasa lo mismo, usan este transformador externo debido a sus pequeñas dimensiones. A pesar de que en el mercado hay algunos equipos de este tipo que sí que tienen la fuente incrustada, sigue siendo del mismo tipo.</p>
+        </section>
+        <footer>
+            <table id="contacto">
+                <tr>
+                    <td>
+                        <h1>Sígueme</h1>
+                        <a href="https://www.facebook.com/ildefonso.torreblancaherrero" target="_blank" rel="noopener" class="face"><i class="fab fa-facebook fa-4x"></i></a>
+                        <a href="https://twitter.com/IldefonsoTH" target="_blank" class="twitter"><i class="fab fa-twitter fa-4x" style="color: white;"></i></a>
+                    </td>
+                    <td>
+                        <h1>Contacto</h1>
+                        <i class="fas fa-envelope"></i>ildefonso@gmail.com<br>
+                        <i class="fas fa-phone"></i> 609308076<br>
+                        <i class="fas fa-map-marker-alt"></i> C/ Rincón, 1, Almogía<br>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <!--Línea de separación y salto-->
+            <p>Trabajo realizado por Ildefonso Torreblanca Herrero</p>
+        </footer>
+    </div>
+</body>
+
+</html>
